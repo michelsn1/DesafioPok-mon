@@ -93,11 +93,11 @@ for i in range(len(dataset)):
         datasetvitorias.iloc[i,2]=vitorias
             
  # Gráfico - Análise Geral
-eixoX=datasetvitorias[:,0]
-eixoy=datasetvitorias[:,1]
+eixoX=datasetvitorias.iloc[:,0]
+eixoy=datasetvitorias.iloc[:,2]
 plt.scatter(eixoX,eixoy, color = 'red')
 #plt.plot(eixoX, eixoy, color = 'blue')
-plt.title('O melhor pokémon')
+plt.title('Distribuição Geral')
 plt.xlabel('Número do pokémon')
 plt.ylabel('Número de vitórias')
 plt.show()
